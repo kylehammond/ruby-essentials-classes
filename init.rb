@@ -2,8 +2,13 @@
 # require_relative 'classes/person'
 # require_relative 'classes/animal'
 
-# puts puts 
+# api testing
+require_relative 'apiTesting/api_client'
 
+apiClient = ApiClient.new
+puts apiClient.posts
+
+# puts puts
 
 # person = Person.new
 # person.first_name = "Bob"
@@ -14,10 +19,8 @@
 
 # puts "-----"
 
-# pig = Animal.new({noise: "Oink!"})
+# pig = Animal.new({ noise: 'Oink!' })
 # puts pig.noise
-
-
 
 # require_relative 'classes/die'
 # require_relative 'classes/dice_set'
@@ -25,7 +28,8 @@
 # puts "-" * 26
 # puts "Welcome to the Dice Roller"
 # puts "-" * 26
-# puts 
+
+# puts
 
 # dice_set = DiceSet.new
 
@@ -36,7 +40,7 @@
 # # end
 # puts dice_set.display
 
-# response = nil 
+# response = nil
 # until response == 'q'
 #     puts "\nType 'r' to roll again, 'q' to quit"
 #     print '> '
@@ -48,22 +52,8 @@
 #     end
 # end
 
-
-
 # require_relative 'classes/test'
 # myinstance = Test.new
 # puts myinstance.testAccessor
 
-
-
-
-
-
-
-
-
-
-
-
-
-puts puts 
+puts puts
