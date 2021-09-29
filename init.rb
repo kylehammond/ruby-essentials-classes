@@ -6,7 +6,19 @@
 require_relative 'apiTesting/api_client'
 
 apiClient = ApiClient.new
-puts apiClient.posts
+response = apiClient.posts
+jsonBody = JSON.parse(response.body)
+# puts jsonBody.class # hash
+# puts response.body.class # string
+
+# get the shape of the first result
+for bodyRecord in jsonBody.take(1).where
+	for field in bodyRecord.keys
+		puts field
+	end
+end
+
+#
 
 # puts puts
 
