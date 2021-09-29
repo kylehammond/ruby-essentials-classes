@@ -18,8 +18,6 @@
 # 	end
 # end
 
-#
-
 # puts puts
 
 # person = Person.new
